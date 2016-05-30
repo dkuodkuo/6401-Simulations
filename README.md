@@ -1,6 +1,6 @@
 # 6401 Simulations
 
-These files were made to double check my probability homework with simulations in R. The textbook being used for these questions is Introduction to Probability by Jessica Hwang and Joseph K. Blitzstein, Har/Psc edition.
+These files were made to double check my probability homework with simulations in R. The textbook being used for these questions is **Introduction to Probability**, by Jessica Hwang and Joseph K. Blitzstein, Har/Psc edition.
 
 ## Chapter 3
 
@@ -58,3 +58,17 @@ Output of ```baseball.c(0.5, 4)```:
 ## [1] "0.5 = probability team A wins, 4 wins total needed for series."
 ## [1] "Estimate was obtained by performing 7e+05 simulations of games."
 ```
+
+### Question 11
+
+[File](files/Ch4Prob11.R)
+
+This question is an application of the [St. Petersburg paradox](https://en.wikipedia.org/wiki/St._Petersburg_paradox). ```petersburg()``` simulates the process of betting under the rules of the St. Petersburg paradox, but with the assumption of a limited bank.
+
+Output of ```petersburg(0.5, 31)```:
+
+```
+## [1] "0.000800000000000027 is the simulated mean of winnings."
+```
+
+Note: to make the simulation run faster, decrease the ```total``` in the function.
