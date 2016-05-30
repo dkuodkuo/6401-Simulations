@@ -1,6 +1,6 @@
 # STAT 6401 Simulations
 
-These files were made to double-check my probability homework answers, via simulations in R. The textbook being used for these questions is **Introduction to Probability** by Jessica Hwang and Joseph K. Blitzstein, Har/Psc edition.
+These files were made to double-check my probability homework answers, via simulations in R. The textbook being used for these questions is **Introduction to Probability by Jessica Hwang and Joseph K. Blitzstein, Har/Psc edition**.
 
 Note: the outputs presented are only one instance of a random simulation, and thus will differ between each test run.
 
@@ -108,3 +108,14 @@ Example output of ```elevator.b(10, 30, c(0.1, 0.05, 0, 0.05, 0.1, 0.2, 0.3, 0.1
 [File](files/Ch4Prob48.R)
 
 The question assumes a coin with probability p of landing on heads. Flipping the coin gives you a series of heads and tails, and the question asks the expected number of "runs," where a run is defined as a chain of heads or tails. For instance, HTTTHHT has 4 runs: H|TTT|HH|T.
+
+Example output of ```flip.runs(30, 0.2)```:
+
+```
+## [1] "10.26352 is the simulated mean of number of runs."
+## [1] "10.28 is the theoretical mean of number of runs."
+## [1] "***EXTRA INFO***"
+## [1] "30 = number of flips, 0.2 = P(Heads)."
+## [1] "Estimate was obtained by performing 1e+05 simulations."
+## [1] "Actual value was obtained by (30-1)*2*0.2*(1-0.2)+1."
+```
