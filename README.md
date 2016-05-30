@@ -10,9 +10,7 @@ Note: the outputs presented are only one instance of a random simulation, and th
 
 [File](files/Ch3Prob18.R)
 
-The question asks for the probability of a team being the first to win a set number of games, given that their probability of winning individual games is p.
-
-Both ```baseball.a()``` and ```baseball.b()``` simulate the probability of a team winning a series of games. However, their conditions are slightly different in the sense that:
+The question asks for the probability of a team being the first to win a set number of games, given that their probability of winning individual games is p. Both ```baseball.a()``` and ```baseball.b()``` simulate the probability of a team winning a series of games. However, their conditions are slightly different in the sense that:
 
 - ```baseball.a()``` stops playing after one team reaches the required number of wins (in this case, 4).
 - ```baseball.b()``` plays out an entire set of games (in this case, 7), and whoever has more wins is the overall winner.
@@ -79,4 +77,28 @@ Note: to make the simulation run faster, decrease the ```total``` in the functio
 
 [File](files/Ch4Prob39.R)
 
-TTH
+This question assumes a building with an elevator. There are n floors and k people, and we want to find the expected number of stops the elevator makes on each floor (not counting the 1st floor). Both ```elevavtor.a()``` and ```elevator.b()``` simulate the process of k people going to floors 2 through n. However, their conditions are slightly different in the sense that ```elevator.a()``` assumes equal probability between floors, while ```elevator.b()``` assumes different probabilities to each floor.
+
+Example output of ```elevator.a(10, 30)```:
+
+```
+## [1] "8.73955 is the simulated mean of number of stops."
+## [1] "8.73717490139725 is the theoretical mean of number of stops."
+## [1] "***EXTRA INFO***"
+## [1] "10 = number of floors, 30 = number of people."
+## [1] "Estimate was obtained by performing 1e+05 simulations."
+## [1] "Actual value was obtained by (10-1)*(1-((10-2/(10-1))^30)"
+```
+
+Example output of ```elevator.b(10, 30, c(0.1, 0.05, 0, 0.05, 0.1, 0.2, 0.3, 0.1, 0.1))```:
+
+```
+## [1] "7.40388 is the simulated mean of number of stops."
+## [1] "7.39989735963368 is the theoretical mean of number of stops."
+## [1] "***EXTRA INFO***"
+## [1] "10 = number of floors, 30 = number of people."
+## [1] "The probability distribution was as follows:"
+## [1] 0.10 0.05 0.00 0.05 0.10 0.20 0.30 0.10 0.10
+## [1] "Estimate was obtained by performing 1e+05 simulations."
+## [1] "Actual value was obtained by sum(1 - (1 - p)^k)"
+```
