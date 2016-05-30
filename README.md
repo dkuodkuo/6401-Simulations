@@ -1,6 +1,6 @@
-# 6401 Simulations
+# STAT 6401 Simulations
 
-These files were made to double check my probability homework with simulations in R. The textbook being used for these questions is **Introduction to Probability**, by Jessica Hwang and Joseph K. Blitzstein, Har/Psc edition.
+These files were made to double-check my probability homework answers, via simulations in R. The textbook being used for these questions is **Introduction to Probability** by Jessica Hwang and Joseph K. Blitzstein, Har/Psc edition.
 
 Note: the outputs presented are only one instance of a random simulation, and thus will differ between each test run.
 
@@ -63,7 +63,7 @@ Example output of ```baseball.c(0.5, 4)```:
 
 [File](files/Ch4Prob11.R)
 
-This question is an application of the [St. Petersburg paradox](https://en.wikipedia.org/wiki/St._Petersburg_paradox). ```petersburg()``` simulates the process of betting under the rules of the St. Petersburg paradox, but with the assumption of a limited bank.
+The question is an application of the [St. Petersburg paradox](https://en.wikipedia.org/wiki/St._Petersburg_paradox). ```petersburg()``` simulates the process of betting under the rules of the St. Petersburg paradox, but with the assumption of a limited bank.
 
 Example output of ```petersburg(0.5, 31)```:
 
@@ -77,7 +77,7 @@ Note: to make the simulation run faster, decrease the ```total``` in the functio
 
 [File](files/Ch4Prob39.R)
 
-This question assumes a building with an elevator. There are n floors and k people, and we want to find the expected number of stops the elevator makes on each floor (not counting the 1st floor). Both ```elevavtor.a()``` and ```elevator.b()``` simulate the process of k people going to floors 2 through n. However, their conditions are slightly different in the sense that ```elevator.a()``` assumes equal probability between floors, while ```elevator.b()``` assumes different probabilities to each floor.
+The question assumes a building with an elevator. There are n floors and k people, and we want to find the expected number of stops the elevator makes on each floor (not counting the 1st floor). Both ```elevavtor.a()``` and ```elevator.b()``` simulate the process of k people going to floors 2 through n. However, their conditions are slightly different in the sense that ```elevator.a()``` assumes equal probability between floors, while ```elevator.b()``` assumes different probabilities to each floor.
 
 Example output of ```elevator.a(10, 30)```:
 
@@ -102,3 +102,9 @@ Example output of ```elevator.b(10, 30, c(0.1, 0.05, 0, 0.05, 0.1, 0.2, 0.3, 0.1
 ## [1] "Estimate was obtained by performing 1e+05 simulations."
 ## [1] "Actual value was obtained by sum(1 - (1 - p)^k)"
 ```
+
+### Question 48
+
+[File](files/Ch4Prob48.R)
+
+The question assumes a coin with probability p of landing on heads. Flipping the coin gives you a series of heads and tails, and the question asks the expected number of "runs," where a run is defined as a chain of heads or tails. For instance, HTTTHHT has 4 runs: H|TTT|HH|T.
