@@ -8,6 +8,8 @@ These files were made to double check my probability homework with simulations i
 
 [File](files/Ch3Prob18.R)
 
+The question asks for the probability of a team being the first to win a set number of games, given that their probability of winning individual games is $p$.
+
 Both ```baseball.a()``` and ```baseball.b()``` simulate the probability of a team winning a series of games. However, their conditions are slightly different in the sense that:
 
 - ```baseball.a()``` stops playing after one team reaches the required number of wins (in this case, 4).
