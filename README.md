@@ -2,6 +2,8 @@
 
 These files were made to double check my probability homework with simulations in R. The textbook being used for these questions is **Introduction to Probability**, by Jessica Hwang and Joseph K. Blitzstein, Har/Psc edition.
 
+Note: the outputs presented are only one instance of a random simulation, and thus will differ between each test run.
+
 ## Chapter 3
 
 ### Question 18
@@ -17,7 +19,7 @@ Both ```baseball.a()``` and ```baseball.b()``` simulate the probability of a tea
 
 ```baseball.a()``` was used to confirm the probability of the scenario in the first place, while ```baseball.b()``` was used to demonstrate that "first to 4 wins" is equivalent to "best of 7 games".
 
-Output of ```baseball.a(0.7, 4)```:
+Example output of ```baseball.a(0.7, 4)```:
 
 ```
 ## [1] "0.87656 is the simulated probability that team A wins the series."
@@ -29,7 +31,7 @@ Output of ```baseball.a(0.7, 4)```:
 ## [1] "Actual value was obtained by sum(dnbinom(0:(4-1),4,0.7))"
 ```
 
-Output of ```baseball.b(0.7, 4)```:
+Example output of ```baseball.b(0.7, 4)```:
 
 ```
 ## [1] "0.87305 is the simulated probability that team A wins the series."
@@ -49,7 +51,7 @@ Output of ```baseball.b(0.7, 4)```:
 
 The question assumes the same scenario as the previous one, but assumes p = 0.5 for both teams. It then asks for the expected mean and variance of games played between the two teams, assuming that the games played stops once a team reaches 4 wins. ```baseball.c()``` simulates this scenario and calculates sample mean and variance as estimates.
 
-Output of ```baseball.c(0.5, 4)```:
+Example output of ```baseball.c(0.5, 4)```:
 
 ```
 ## [1] "5.81244142857143 is the simulated mean of number of games played."
@@ -65,10 +67,16 @@ Output of ```baseball.c(0.5, 4)```:
 
 This question is an application of the [St. Petersburg paradox](https://en.wikipedia.org/wiki/St._Petersburg_paradox). ```petersburg()``` simulates the process of betting under the rules of the St. Petersburg paradox, but with the assumption of a limited bank.
 
-Output of ```petersburg(0.5, 31)```:
+Example output of ```petersburg(0.5, 31)```:
 
 ```
 ## [1] "0.000800000000000027 is the simulated mean of winnings."
 ```
 
 Note: to make the simulation run faster, decrease the ```total``` in the function.
+
+### Question 39
+
+[File](files/Ch4Prob39.R)
+
+TTH
