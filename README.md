@@ -119,3 +119,22 @@ Example output of ```flip.runs(30, 0.2)```:
 ## [1] "Estimate was obtained by performing 1e+05 simulations."
 ## [1] "Actual value was obtained by (30-1)*2*0.2*(1-0.2)+1."
 ```
+
+### Question 64
+
+[File](files/Ch4Prob64.R)
+
+The question asks for an *approximation* of the probability of choosing someone more than once when sampling 1000 people out of 1000000 for surveying. Instead of finding an *exact* probability, the question requires the reader to estimate via indicator random variables. ```repeat.sample()``` simulates the process for a sample probability, as well as comparing the exact probability with the estimated probability.
+
+Example output of ```repeat.sample(1000000, 1000)```:
+
+```
+## [1] "0.39 is the simulated probability of more than one repeat."
+## [1] "0.393267028558521 is the theoretical probability of more than one repeat."
+## [1] "0.39316599912854 is the estimated probability of more than one repeat."
+## [1] "***EXTRA INFO***"
+## [1] "1e+06 = population size, 1000 = sample size."
+## [1] "Simulated probability used 1000 simulations."
+## [1] "Actual value was obtained by 1 - prod(((1e+06-1000+1):1e+06)/1e+06)"
+## [1] "Estimate was obtained by 1 - exp(-sum(0:(1000-1))/1e+06)"
+```
