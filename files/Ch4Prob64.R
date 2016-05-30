@@ -2,7 +2,7 @@
 ### Question 64 ###
 ###################
 
-repeat.sample <- function(N, n) # N = population size, n = sample size
+repeatsample <- function(N, n) # N = population size, n = sample size
 {
   reps = 1000
   out = numeric(reps)
@@ -25,4 +25,4 @@ repeat.sample <- function(N, n) # N = population size, n = sample size
   print(paste0("Estimate was obtained by 1 - exp(-sum(0:(",n,"-1))/",N,")"))
 }
 
-repeat.sample(1000000, 1000)
+repeatsample(1000000, 1000)
