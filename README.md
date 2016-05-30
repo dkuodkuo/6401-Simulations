@@ -4,7 +4,9 @@ These files were made to double check my probability homework with simulations i
 
 ## Chapter 3
 
-### Question 18a
+### Question 18a, b
+
+[File](files/Ch3Prob18.R)
 
 ### Question 18b
 
