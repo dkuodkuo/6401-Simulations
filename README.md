@@ -8,12 +8,12 @@ These files were made to double check my probability homework with simulations i
 
 [File](files/Ch3Prob18.R)
 
-Both ```baseball.a()``` and ```baseball.b()``` simulates the probability of a team winning a series of games. However, their conditions are slightly different in the sense that:
+Both ```baseball.a()``` and ```baseball.b()``` simulate the probability of a team winning a series of games. However, their conditions are slightly different in the sense that:
 
-- ```baseball.a()``` stops playing after one team nets the required number of wins (in this case, 4).
+- ```baseball.a()``` stops playing after one team reaches the required number of wins (in this case, 4).
 - ```baseball.b()``` plays out an entire set of games (in this case, 7), and whoever has more wins is the overall winner.
 
-Theoretically, "first to 4 wins" is equivalent to "best of 7 games", and this was used just to simulate both cases to demonstrate equivalent probability. More importantly, ```baseball.a()``` was used to confirm the theoretical probability.
+```baseball.a()``` was used to confirm the probability of the scenario in the first place, while ```baseball.b()``` was used to demonstrate that "first to 4 wins" is equivalent to "best of 7 games".
 
 Output of ```baseball.a(0.7, 4)```:
 
