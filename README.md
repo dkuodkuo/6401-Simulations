@@ -124,9 +124,9 @@ Example output of ```flip.runs(30, 0.2)```:
 
 [File](files/Ch4Prob64.R)
 
-The question asks for an *approximation* of the probability of choosing someone more than once when sampling 1000 people out of 1000000 for surveying (aka, with replacement). Instead of finding an *exact* probability, the question requires the reader to estimate via indicator random variables. ```repeat.sample()``` simulates the process for a sample probability, as well as comparing the exact probability with the estimated probability.
+The question asks for an *approximation* of the probability of choosing someone more than once when sampling 1000 people out of 1000000 for surveying (aka, with replacement). Instead of finding an *exact* probability, the question requires the reader to estimate via indicator random variables. ```repeatsample()``` simulates the process for a sample probability, as well as comparing the exact probability with the estimated probability.
 
-Example output of ```repeat.sample(1000000, 1000)```:
+Example output of ```repeatsample(1000000, 1000)```:
 
 ```
 ## [1] "0.39 is the simulated probability of more than one repeat."
