@@ -8,7 +8,7 @@ These files were made to double check my probability homework with simulations i
 
 [File](files/Ch3Prob18.R)
 
-The question asks for the probability of a team being the first to win a set number of games, given that their probability of winning individual games is $p$.
+The question asks for the probability of a team being the first to win a set number of games, given that their probability of winning individual games is p.
 
 Both ```baseball.a()``` and ```baseball.b()``` simulate the probability of a team winning a series of games. However, their conditions are slightly different in the sense that:
 
@@ -39,4 +39,22 @@ Output of ```baseball.b(0.7, 4)```:
 ## [1] "Estimate was obtained by performing 1e+05 simulations of games,"
 ## [1] "Of which team A won 87305 times. (87305/1e+05)"
 ## [1] "Actual value was obtained by sum(dnbinom(0:(4-1),4,0.7))"
+```
+
+## Chapter 4
+
+### Question 6
+
+[File](files/Ch4Prob06.R)
+
+The question assumes the same scenario as the previous one, but assumes p = 0.5 for both teams. It then asks for the expected mean and variance of games played between the two teams, assuming that the games played stops once a team reaches 4 wins. ```baseball.c()``` simulates this scenario and calculates sample mean and variance as estimates.
+
+Output of ```baseball.c(0.5, 4)```:
+
+```
+## [1] "5.81244142857143 is the simulated mean of number of games played."
+## [1] "1.02699749656939 is the simulated variance of number of games played."
+## [1] "***EXTRA INFO***"
+## [1] "0.5 = probability team A wins, 4 wins total needed for series."
+## [1] "Estimate was obtained by performing 7e+05 simulations of games."
 ```
