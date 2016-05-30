@@ -2,7 +2,7 @@
 
 These files were made to double-check my probability homework answers, via simulations in R. The textbook being used for these questions is **Introduction to Probability by Jessica Hwang and Joseph K. Blitzstein, Har/Psc edition**.
 
-Note: the outputs presented are only one instance of a random simulation, and thus will differ between each test run.
+Note: the outputs presented are only one instance of a random simulation, and thus will differ between each test run. Also, I am avoiding uploading my actual answers so that this repo doesn't simply become the go-to for someone using Google for answers to their homework.
 
 ## Chapter 3
 
