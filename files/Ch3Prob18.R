@@ -1,6 +1,6 @@
-#########################
-### Question 18a, 18b ###
-#########################
+###################
+### Question 18 ###
+###################
 
 # baseball.a is for part a, baseball.b is for part b
 
